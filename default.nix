@@ -17,7 +17,6 @@ in
             sponsorblock
             youtube-recommended-videos
             scroll_anywhere
-            read-aloud
             darkreader
             newtab-adapter
           ];
@@ -28,7 +27,7 @@ in
             }
           '';
           settings = {
-            "browser.startup.homepage" = "https://random.earth/";
+            "browser.startup.homepage" = "https://www.google.co.uk";
             "browser.search.region" = "GB";
             "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
             "app.normandy.first_run" = false;
