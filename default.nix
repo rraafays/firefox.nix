@@ -1,7 +1,10 @@
 { pkgs, ... }:
 
+let
+    USER = "raf";
+in
 {
-  home-manager.users.raf = {
+  home-manager.users.${USER} = {
     programs.firefox = {
       enable = true;
       profiles = {
