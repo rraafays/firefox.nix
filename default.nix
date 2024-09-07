@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-    USER = "raf";
+  USER = "raf";
 in
 {
   home-manager.users.${USER} = {
