@@ -4,6 +4,18 @@ let
   USER = "raf";
 in
 {
+  environment.variables = {
+    BROWSER = "firefox";
+    MOZ_WEBRENDER = 0;
+    MOZ_ENABLE_WAYLAND = 1;
+    MOZ_DISABLE_GMP_SANDBOX = 1;
+    MOZ_DISABLE_ACCELERATED_XSHM = 1;
+    MOZ_DISABLE_E10S = 1;
+    MOZ_FORCE_DISABLE_E10S = 1;
+    MOZ_WEBRENDER_THREADS = 2;
+    MOZ_NUM_CONTENT_PROCESSES = 2;
+  };
+
   home-manager.users.${USER} = {
     programs.firefox = {
       enable = true;
@@ -48,6 +60,8 @@ in
             "extensions.formautofill.addresses.enabled" = false;
             "extensions.formautofill.creditCards.enabled" = false;
             "extensions.formautofill.hueristics.enabled" = false;
+            "extensions.pocket.enabled" = false;
+            "layers.acceleration.force-enabled" = true;
           };
         };
       };
