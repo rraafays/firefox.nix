@@ -27,7 +27,6 @@ in
             sponsorblock
             youtube-recommended-videos
             scroll_anywhere
-            darkreader
             newtab-adapter
           ];
           userChrome = ''
