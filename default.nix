@@ -28,13 +28,8 @@ in
             youtube-recommended-videos
             scroll_anywhere
             newtab-adapter
+            plasma-integration
           ];
-          userChrome = ''
-            #TabsToolbar { visibility: collapse !important; }
-            #main-window:not([customizing]) #navigator-toolbox:not(:focus-within):not(:hover){
-                margin-top: -45px;
-            }
-          '';
           settings = {
             "browser.startup.homepage" = "https://www.google.co.uk";
             "browser.search.region" = "GB";
