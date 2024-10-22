@@ -29,6 +29,7 @@ in
             scroll_anywhere
             newtab-adapter
             plasma-integration
+            bypass-paywalls-clean
           ];
           userChrome = ''
             /* Menu button */
