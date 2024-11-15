@@ -29,6 +29,7 @@ in
             scroll_anywhere
             newtab-adapter
             plasma-integration
+            stylus
           ];
           userChrome = ''
             /* Menu button */
