@@ -30,6 +30,7 @@ in
             newtab-adapter
             plasma-integration
             stylus
+            read-aloud
           ];
           userChrome = ''
             /* Menu button */
