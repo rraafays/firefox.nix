@@ -29,8 +29,8 @@ in
             scroll_anywhere
             newtab-adapter
             plasma-integration
-            stylus
             read-aloud
+            theater-mode-for-youtube
           ];
           userChrome = ''
             /* Menu button */
