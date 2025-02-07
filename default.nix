@@ -1,10 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 let
   USER = "raf";
+
+  inherit (pkgs) stdenv;
+  inherit (lib) mkIf;
 in
 {
-  environment.variables = {
+  environment.variables = mkIf stdenv.isLinux {
     BROWSER = "firefox";
     MOZ_WEBRENDER = 0;
     MOZ_ENABLE_WAYLAND = 1;
@@ -18,6 +21,7 @@ in
 
   home-manager.users.${USER} = {
     programs.firefox = {
+      package = mkIf stdenv.isDarwin null;
       enable = true;
       profiles = {
         default = {
