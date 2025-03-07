@@ -35,6 +35,7 @@ in
             plasma-integration
             read-aloud
             theater-mode-for-youtube
+            react-devtools
           ];
           userChrome = ''
             #TabsToolbar { visibility: collapse !important; }
